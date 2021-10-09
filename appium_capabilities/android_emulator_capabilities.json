@@ -1,0 +1,24 @@
+{
+  "caps": [
+    {
+      "key": "automationName",
+      "value": "UiAutomator2"
+    },
+    {
+      "key": "platformName",
+      "value": "Android"
+    },
+    {
+      "key": "platformVersion",
+      "value": "8.0"
+    },
+    {
+      "key": "deviceName",
+      "value": "Android Emulator"
+    },
+    {
+      "key": "app",
+      "value": "D:\\My_Projects\\Test Automation\\Appium\\demo_todolist_appium\\app\\ToDo.apk"
+    }
+  ]
+}

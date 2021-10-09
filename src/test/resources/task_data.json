@@ -1,0 +1,21 @@
+{
+  "task-with-title-only": {
+    "index": 0,
+    "task-name": "Learn Appium"
+  },
+  "task-with-full-data": {
+    "index": 0,
+    "task-name": "Learn Appium",
+    "task-note": "ASAP",
+    "tags": {
+      "existed": [
+        "Personnal",
+        "Work"
+      ],
+      "new": "Learning"
+    },
+    "start-date": "20 October 2021",
+    "due-date": "28 October 2021",
+    "priority": "High"
+  }
+}
