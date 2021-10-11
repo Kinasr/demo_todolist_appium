@@ -8,8 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import screens.HomeScreen;
 
-import java.util.Arrays;
-
 public class AddTaskTest extends BaseTest {
     JsonReader jsonReader;
 
@@ -53,7 +51,7 @@ public class AddTaskTest extends BaseTest {
                 .pickPriority(task.priority())
                 .confirmSelectedPriority()
                 .saveTask()
-                .assertThatTaskWithIndexIsAdded(task.index());
+                .assertNumOfTasks(1);
 
     }
 }

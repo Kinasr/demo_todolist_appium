@@ -70,6 +70,11 @@ public class AddTaskScreen {
         return new HomeScreen(driver);
     }
 
+    public AddTaskScreen scrollVertical(float startOffset, float endOffset) {
+        mobActions.scrollVertical(startOffset, endOffset);
+        return this;
+    }
+
     public class TagPickerPopup {
         private final By newTagTextField = By.cssSelector("[text='New tag']");
 
@@ -80,8 +85,9 @@ public class AddTaskScreen {
         }
 
         public TagPickerPopup enterNewTag(String tagName) {
-            mobActions.sendTextTo(newTagTextField, tagName);
-//            mobActions.sendTextToAlert(tagName);
+            mobActions
+                    .waitScreenToLoad(newTagTextField)
+                    .sendTextTo(newTagTextField, tagName);
             return this;
         }
 
